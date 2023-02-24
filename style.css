@@ -2,32 +2,94 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.8
+  line-height: 1.8;
+  background-color: #212938;
+  color: #ffffff;
 }
 
 h1 {
-  color: #ffffff;
   text-align: center;
 }
 
-.main_page {
-  height: 100%;
-  z-index: 1;
-  top: 0;
-  left: 20%;
-  background-color: #ffffff;
-  color: #111111;
-  overflow-x: hidden;
+.container {
+  background-color: #212938;
+  width: 100%;
+  height: 650px;
 }
 
-.main_page h2 {
+.container h2 {
   text-align: center;
+  padding-right: 10px;
 }
 
-.main_page p {
+.container p {
   font-size: 20px;
   text-align: center;
 }
+
+.vertical_bar
+{
+  background-color: #212938;
+  width: 20%;
+  height: 100%;
+  float:left;
+}
+
+.vertical_bar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  display: block;
+}
+
+.vertical_bar a:hover {
+  color: #f1f1f1;
+}
+
+.vertical_bar_bottom
+{
+  vertical-align: bottom;
+}
+
+#vertical_bar_bottom {
+  position: fixed;
+  padding: 6px 8px 6px 16px;
+  bottom: 0;
+  left: 0;
+}
+
+.main_page
+{
+  background-color: #303a4e;
+  width: 80%;
+  height: 100%;
+  float: left;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+
+
+
 
 input[type=submit] {
   background-color: #4CAF50;
@@ -55,58 +117,4 @@ input[type=email] {
   padding: 15px 32px;
   display: inline-block;
   font-size: 16px;
-}
-
-/* SIDEBAR BEGINNING*/
-
-/* Style the sidebar - fixed full height */
-.sidebar {
-  height: 100%;
-  width: 20%;
-  position: left;
-  float: left;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #212938;
-  overflow-x: hidden;
-  padding: 0px;
-}
-
-/* Style sidebar links */
-.sidebar a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #b8b8b8;
-  display: block;
-}
-
-/* Style links on mouse-over */
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-
-/* Style the main content */
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  padding: 0px 10px;
-}
-
-/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
-
-#bottom {
-  position: fixed;
-  padding: 6px 8px 6px 16px;
-  bottom: 0;
-  left: 0;
-}
-/* SIDEBAR END*/
-
-.main_page {
-  width: 80%;
 }
