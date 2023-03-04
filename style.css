@@ -15,7 +15,6 @@ h1 {
 .contenido{
   display:flex;
   flex-direction: row;
-  border: 5px solid red;
   background-color: #384e7c;
   position:absolute;
   top:0;
@@ -41,9 +40,7 @@ h1 {
   display: block;
 }
 
-.menu:hover{
-  width: 220px;
-}
+
 
 .nav-pills {
   --bs-nav-pills-border-radius: 1rem;
@@ -240,3 +237,22 @@ input[type=email] {
   display: inline-block;
   font-size: 16px;
 }
+
+.carousel-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 33rem;
+  min-width: 100%; 
+  
+}
+
+.carousel{
+  display:flex;
+  align-items: center;
+  
+  background: #777;
+  height: 34rem;
+  min-width: 30rem;
+}
+
