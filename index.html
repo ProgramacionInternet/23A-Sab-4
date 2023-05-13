@@ -3,85 +3,79 @@
 <html>
   <head>
     <title>GameArena</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-
   </head>
   <body>
-  <main>
-  <div class="contenido">
+    <header>
+      <h1>GameArena</h1>
+    </header>
 
-    
-    <div class="bg-dark menu">
-      <ul class="nav nav-pills flex-column mb-auto">
-        <h2> CUCEI ArenaGames</h2>
-        <li class="nav-item">
-          <a class="nav-link active" href="index.html"><i class="icon ion-md-home"></i> Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="games.html"><i class="bi bi-controller"></i> Games</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="games.html"><i class="icon ion-md-trophy"></i> Tournaments</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="games.html"><i class="icon ion-md-settings"></i></i> Settings</a>
-        </li>
+    <nav>
+      <ul>
+        <li><a href="#upcoming">Torneos activos</a></li>
+        <li><a href="#previous">Torneos concluidos</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
+    </nav>
 
-        
-      <div class="menu_bottom">
-        <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="login.html"><i class="bi bi-person-circle"></i> Log In  </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="signin.html"><i class="bi bi-person-lines-fill"></i> Sign In  </a>
-          </li>
+    <main>
+      <section id="upcoming">
+        <h2>Torneos activos</h2>
+        <ul>
+          <li>League of Legends: Febrero 20-25
+          <form method="post">
+            <input type="hidden" name="tournament" value="Tournament 1">
+            <input type="text" name="name" placeholder="Nombre">
+            <input type="email" name="email" placeholder="email">
+            <input type="submit" value="Subscribe">
+          </form>
+        </li>
+          <li>Super Smash Bros Ultimate: Marzo 10-15
+          <form method="post">
+
+            <input type="hidden" name="tournament" value="Tournament 2">
+            <input type="text" name="name" placeholder="Nombre">
+            <input type="email" name="email" placeholder="email">
+            <input type="submit" value="Subscribe">
+          </form>
+        <li>Fortnite: April 5-10
+          <form method="post">
+
+            <input type="hidden" name="tournament" value="Tournament 3">
+            <input type="text" name="name" placeholder="Nombre">
+            <input type="email" name="email" placeholder="email">
+            <input type="submit" value="Subscribe">
+          </form>
+        </li>
         </ul>
-      </div>
+      </section>
 
-    </div>
+      <section id="previos">
+      <h2>Torneos concluidos</h2>
+      <ul>
+        <li>Valorant: Enero 10-15</li>
+        <li>Apex Legends: Deciembre 20-25</li>
+        <li>Call of Duty Warzone: Noviembre 10-15</li>
+      </ul>
+    </section>
+      
+        <section id="winners">
+      <h2>Campeones actuales</h2>
+      <ul>
+        <li>Valorant: Fury</li>
+        <li>Apex Legends: Vainas locas</li>
+        <li>Call of Duty Warzone: Los inges</li>
+      </ul>
+    </section>
 
-    <div class="container-fluid">
-   
-    
-      <div id="myCarousel" class="carousel slide carousel-fade mx-auto">
-
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/banner1.jpg" class="d-block w-100" alt="Warzone">
-          </div>
-          <div class="carousel-item">
-            <img src="img/banner2.jpg" class="d-block w-100" alt="Apex">
-          </div>
-          <div class="carousel-item">
-            <img src="img/banner3.png" class="d-block w-100" alt="Valorant">
-          </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-
-      </div>
-
+      <section id="about">
+        <h2>About</h2>
+        <p>Esta pagina permite el registro por parte de alumnos de CUCEI para competir  	 con y contra otros estudiantes en distintos juegos multijugador.</p>
+      </section>
     </main>
-    </div>
-  </div>
+
+    <footer>
+      <p>&copy; 2023 CUCEI GameArena</p>
+    </footer>
   </body>
 </html>
 
