@@ -262,12 +262,14 @@ input[type=email] {
 }
 
 form {
-  margin: 50px auto;
-  max-width: 600px;
+  max-width: 500px;
+  margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 50px; /* Opcional, para agregar un poco de espacio entre el formulario y la parte superior de la página */
 }
-
 label {
   display: block;
   margin-bottom: 10px;
@@ -305,3 +307,4 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #0056b3;
 }
+
